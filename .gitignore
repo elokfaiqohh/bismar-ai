@@ -1,0 +1,58 @@
+# Dependency directories
+node_modules/
+frontend/node_modules/
+.venv/
+venv/
+ENV/
+env/
+
+# Build outputs
+build/
+frontend/build/
+dist/
+frontend/dist/
+
+# Python caching & logs
+__pycache__/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+backend/logs/
+
+# SQLite databases & database locks
+*.db
+*.sqlite3
+backend/sales.db
+backend/sales.db-journal
+
+# ML Model Artifacts (Large binary files)
+*.pkl
+*.joblib
+backend/model_product_sales.pkl
+
+# Environment variables & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example
+
+# Dataset uploads & backups (Ignore active session data, keep directories)
+dataset/uploads/*
+dataset/backups/*
+!dataset/uploads/.gitkeep
+!dataset/backups/.gitkeep
+
+# IDEs & System files
+.vscode/
+.idea/
+.gemini/
+.system_generated/
+.DS_Store
+Thumbs.db
